@@ -148,13 +148,7 @@
   </div>
   <p><i>The PCB soldered to the microcontroller. It's attached via solder on ground, power, and four GPIO pins.</i></p>
   <p>With the physical construction done - or at least as done as it could be - I moved on to code. I referenced my code from Week 11 and the <a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/BlinkWithoutDelay">Blink Without Delay</a> example.</p>
-  <div class="card bg-light">
-    <div class="card-body">
-    </div>
-  </div>
 
-  <p>First to showcase are the buttons- top button for volume up, bottom button for volume down, middle button for push to talk, and both volumes for play/pause.</p>
-  <p>Next is the indicator light. As it says in the code comment, it flashes quickly while searching for a Bluetooth connection, blinks slowly when on, and holds bright when push to talk is active.</p>
   <div class="card bg-light">
     <div class="card-body">
       <pre>
@@ -263,6 +257,45 @@
 <font color="#000000">}</font></pre>
     </div>
   </div>
+  <p><i>fyi- below this is the same content as the Showcase section above if you've already seen that</i></p>
+  <p>First to showcase are the buttons- top button for volume up, bottom button for volume down, middle button for push to talk, and both volumes for play/pause.</p>
+  <div class="row img-wrapper d-flex flex-wrap align-items-center justify-content-md-center">
+    <div class="col col-4">
+      <video width="100%" height="100%" preload="auto" controls>
+        <source src="volume.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col col-4">
+      <video width="100%" height="100%" preload="auto" controls>
+        <source src="ptt.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col col-5">
+      <video width="100%" height="100%" preload="auto" controls>
+        <source src="playpause.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <p><i>featuring my excellent music taste. The first video shows the volume controls. For the push to talk video, this is on a Discord call, so the green circle indicates that it's receiving the push-to-talk signal. The last video has the Spotify play bar at the bottom of the screen so you can see that it's actually playing/pausing.</i></p>
+  <p>Next is the indicator light. It flashes quickly while searching for a Bluetooth connection, blinks slowly when on, and holds bright when push to talk is active. (I changed how I wanted the LED to work after I filmed the button videos so there is a slight lack of consistency there, sorry~!)</p>
+  <div class="row img-wrapper d-flex flex-wrap align-items-center justify-content-md-center">
+    <div class="col col-4">
+      <video width="100%" height="100%" preload="auto" controls>
+        <source src="volume.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col col-4">
+      <video width="100%" height="100%" preload="auto" controls>
+        <source src="ptt.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col col-5">
+      <video width="100%" height="100%" preload="auto" controls>
+        <source src="playpause.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <p><i>featuring airplane turbulence shaking my camera. The first video shows the quick flash searching indicator. The second video is the slow blink - it looks less but still a little bit choppy in real life. The stepping is due to the board's PWM only accepting integer values. The last video is the brightness when you hold down the push to talk button. I will never accidentally push it without realizing and then say something embarassing, because this light is very bright.</i></p>
 </div>
 
     </div>
